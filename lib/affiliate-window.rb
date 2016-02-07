@@ -1,19 +1,19 @@
-module AffiliateWindow
+require 'csv'
+require 'net/http'
+require 'savon'
+require 'savon_model'
+require 'affiliate-window/version'
+require 'affiliate-window/helpers/account'
+require 'affiliate-window/helpers/client'
+require 'affiliate-window/helpers/csv'
+require 'affiliate-window/account'
+require 'affiliate-window/clients/category'
+require 'affiliate-window/clients/merchant'
+require 'affiliate-window/clients/affiliate_service'
+require 'affiliate-window/clients/shop_window'
+require 'affiliate-window/models/transaction'
 
-  require 'csv'
-  require 'net/http'
-  require 'savon'
-  require 'savon_model'
-  require 'affiliate-window/version'
-  require 'affiliate-window/helpers/account'
-  require 'affiliate-window/helpers/client'
-  require 'affiliate-window/helpers/csv'
-  require 'affiliate-window/account'
-  require 'affiliate-window/clients/category'
-  require 'affiliate-window/clients/merchant'
-  require 'affiliate-window/clients/affiliate_service'
-  require 'affiliate-window/clients/shop_window'
-  require 'affiliate-window/models/transaction'
+module AffiliateWindow
   
   DEFAULT_USER_AGENT = "AffiliateWindow rubygem v#{Version::STRING} (http://github.com/andyt/affiliate-window)"
 
