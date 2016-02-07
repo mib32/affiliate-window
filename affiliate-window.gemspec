@@ -13,14 +13,7 @@ Gem::Specification.new do |s|
     "LICENSE.txt",
     "README.rdoc"
   ]
-  s.files = [
-    ".document",
-    "Gemfile",
-    "LICENSE.txt",
-    "README.rdoc",
-    "Rakefile",
-    "lib/affiliate-window.rb"
-  ]
+  s.files    = `git ls-files`.split("\n")
   s.homepage = "http://github.com/andyt/affiliate-window"
   s.licenses = ["MIT"]
   s.require_paths = ["lib"]
